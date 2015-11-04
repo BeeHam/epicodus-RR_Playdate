@@ -1,0 +1,10 @@
+<h1>Playdates with Randy</h1>
+<ul>
+  <% @plans.each do |plan| %>
+    <li>
+      Get the <b><%= plan.name %></b>
+      for <b><%= plan.price %></b>
+      to hang with Randy for <b><%= plan.time %></b>
+    </li>
+  <% end %>
+</ul>
