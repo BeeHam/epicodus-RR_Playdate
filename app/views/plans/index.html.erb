@@ -1,10 +1,13 @@
-<h1>Playdates with Randy</h1>
-<ul>
+<h1 class="text-center">Playdates with Randy</h1>
+<hr>
+
+<div class="col-xs-12">
   <% @plans.each do |plan| %>
-    <li>
-      Get the <b><%= plan.name %></b>
-      for <b><%= plan.price %></b>
-      to hang with Randy for <b><%= plan.time %></b>
-    </li>
+    <div class="col-xs-3"> Get the <b><%= plan.name %></b>
+                          for <b><%= plan.price %></b>
+                          to hang with Randy for <b><%= plan.time %></b>
+                          <br>
+                          <%= link_to "Subscribe", new_plan_subscription_path(plan), class: "btn btn-danger" %>
+    </div>
   <% end %>
-</ul>
+</div>
