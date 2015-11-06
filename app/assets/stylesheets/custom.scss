@@ -1,0 +1,30 @@
+.container {
+  min-width: 100%;
+  padding: 0px;
+}
+
+.plans {
+  background-color: lightgrey;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1em;
+  height: 15em
+}
+
+.button {
+  // margin-top: 5em;
+  margin-left: 40%;
+}
+
+#title {
+  background: salmon;
+  padding: 2em;
+  color: white;
+  margin: 0 auto;
+}
+
+#cat img{
+  height: 150px;
+  margin-left: 45%;
+}
